@@ -150,7 +150,7 @@ with col3:
 
 
 # Rekomendasi Berdasarkan Analisis
-st.header('🎯 Rekomendasi')
+st.header(' Rekomendasi')
 
 # Buat columns untuk rekomendasi
 col1, col2 = st.columns(2)
@@ -190,7 +190,7 @@ with col2:
     st.pyplot(fig)
 
 # Kesimpulan utama
-st.subheader("💡 Kesimpulan Utama")
+st.subheader(" Kesimpulan Utama")
 st.write("""
 1. Optimalkan persediaan sepeda pada jam sibuk (17:00-18:00)
 2. Tingkatkan layanan pada hari kerja dan musim panas
