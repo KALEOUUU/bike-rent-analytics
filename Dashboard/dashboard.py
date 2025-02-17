@@ -6,10 +6,24 @@ import seaborn as sns
 # Judul Dashboard
 st.title('Bike Rent Analytic')
 
+import os
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Judul Dashboard
+st.title('Bike Rent Analytic')
+
 # Load Dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dataset_all.csv')
+    # Get the current directory of the script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Construct the path to the dataset
+    dataset_path = os.path.join(current_dir, 'dataset_all.csv')
+    # Load the dataset
+    df = pd.read_csv(dataset_path)
     # Konversi kolom dteday ke datetime
     df['dteday'] = pd.to_datetime(df['dteday'])
     # Tambahkan kolom baru untuk analisis waktu
@@ -19,6 +33,8 @@ def load_data():
     return df
 
 df = load_data()
+
+# Rest of your code remains the same...
 
 # Ringkasan Data
 st.header(' Ringkasan Dataset')
