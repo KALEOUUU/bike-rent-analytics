@@ -31,6 +31,7 @@ var/
 
 # Environment
 .env
+.venv
 venv/
 ENV/
 
