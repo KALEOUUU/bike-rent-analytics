@@ -1,1 +1,1 @@
-https://bike-rent-analytics.streamlit.app/
+https://bike-rentals-analysist.streamlit.app/

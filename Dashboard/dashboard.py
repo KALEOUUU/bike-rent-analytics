@@ -6,15 +6,6 @@ import seaborn as sns
 # Judul Dashboard
 st.title('Bike Rent Analytic')
 
-import os
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# Judul Dashboard
-st.title('Bike Rent Analytic')
-
 # Load Dataset
 @st.cache_data
 def load_data():
